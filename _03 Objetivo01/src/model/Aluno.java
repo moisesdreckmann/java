@@ -2,7 +2,7 @@ package model;
 import controller.AlunoController;
 public class Aluno {
     private int id;
-    private int cpf;
+    private String cpf;
     private String nome;
     private String sobrenome;
     private String email;
@@ -14,7 +14,7 @@ public class Aluno {
         this.id = id;
         this.nome = nome;
     }
-    public Aluno(int id, int cpf, String nome, String sobrenome, String email) {
+    public Aluno(int id, String cpf, String nome, String sobrenome, String email) {
         this.id = id;
         this.cpf = cpf;
         this.nome = nome;
@@ -30,11 +30,11 @@ public class Aluno {
         this.id = id;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
