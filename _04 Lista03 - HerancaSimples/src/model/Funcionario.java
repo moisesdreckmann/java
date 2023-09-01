@@ -1,8 +1,15 @@
 package model;
+import controller.FuncionarioController1;
+import controller.FuncionarioController2;
 
 public abstract class Funcionario {
-    private String nome;
-    private double salario;
+    protected String nome;
+    protected double salario;
+
+    public Funcionario(String nome, double salario) {
+        this.nome = nome;
+        this.salario = salario;
+    }
 
     public Funcionario() {
 
@@ -23,6 +30,8 @@ public abstract class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    public abstract double getBonus();
 
     @Override
     public String toString() {
