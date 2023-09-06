@@ -44,7 +44,7 @@ public class Main {
         //BynaryOperator recebe dois argumentos de um Tipo e retorna do mesmo Tipo
         List<Integer> numeros3 = Arrays.asList(1,2,3,4,5);
         int resultado = numeros3
-                .stream().reduce((n1, n2) -> n1+n2)
+                .stream().reduce(Integer::sum)
                 .orElse(0);
         System.out.println(resultado);
 
