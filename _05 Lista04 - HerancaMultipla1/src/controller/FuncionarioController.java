@@ -19,7 +19,7 @@ public class FuncionarioController {
         Desenvolvedor d5 = new Desenvolvedor("pedro",4000);
         Desenvolvedor d6 = new Desenvolvedor("rafael",4000);
 
-        Gerente g1 = new Gerente("marta", 20000,"AXWS",1000);
+        Gerente g1 = new Gerente("marta", 25000,"AXWS",1000);
         Gerente g2 = new Gerente("anna", 20000,"AXWS",4000);
         Gerente g3 = new Gerente("josé", 20000,"AXWS",50);
         Gerente g4 = new Gerente("gustavo", 20000,"AXWS",500);
@@ -52,30 +52,58 @@ public class FuncionarioController {
         System.out.println(c5);
         System.out.println(c6+"\n\n");
 
-        List<Object> pessoas = new ArrayList<>();
-        pessoas.add(d1);
-        pessoas.add(d2);
-        pessoas.add(d3);
-        pessoas.add(d4);
-        pessoas.add(d5);
-        pessoas.add(d6);
-        pessoas.add(g1);
-        pessoas.add(g2);
-        pessoas.add(g3);
-        pessoas.add(g4);
-        pessoas.add(g5);
-        pessoas.add(g6);
-        pessoas.add(c1);
-        pessoas.add(c2);
-        pessoas.add(c3);
-        pessoas.add(c4);
-        pessoas.add(c5);
-        pessoas.add(c6);
+        List<Funcionario> funcionarioList = new ArrayList<>();
+        funcionarioList.add(d1);
+        funcionarioList.add(d2);
+        funcionarioList.add(d3);
+        funcionarioList.add(d4);
+        funcionarioList.add(d5);
+        funcionarioList.add(d6);
+        funcionarioList.add(g1);
+        funcionarioList.add(g2);
+        funcionarioList.add(g3);
+        funcionarioList.add(g4);
+        funcionarioList.add(g5);
+        funcionarioList.add(g6);
 
-        for (Object lista : pessoas) {
-            System.out.println(lista);
-        }
+        List<Investidor> investidorList = new ArrayList<>();
+        investidorList.add(g1);
+        investidorList.add(g2);
+        investidorList.add(g3);
+        investidorList.add(g4);
+        investidorList.add(g5);
+        investidorList.add(g6);
+        investidorList.add(c1);
+        investidorList.add(c2);
+        investidorList.add(c3);
+        investidorList.add(c4);
+        investidorList.add(c5);
+        investidorList.add(c6);
+
+        System.out.println(funcionarioList);
         System.out.println("\n\n");
+        System.out.println(investidorList);
+        System.out.println("\n\n");
+
+        funcionarioList.sort(Comparator.comparing(Funcionario::getSalario).reversed());
+        System.out.println(funcionarioList);
+        System.out.println("\n\n");
+
+        investidorList.sort(Comparator.comparing(Investidor::getQuantidade).reversed());
+        System.out.println(investidorList);
+        System.out.println("\n\n");
+
+        Funcionario maiorSalario = funcionarioList.stream()
+                .max(Comparator.comparing(Funcionario::getSalario))
+                .orElse(null);
+        System.out.println(maiorSalario);
+        System.out.println("\n\n");
+
+        Investidor maiorQuantidadeDeTickers = investidorList.stream()
+                .max(Comparator.comparing(Investidor::getQuantidade))
+                .orElse(null);
+        System.out.println(maiorQuantidadeDeTickers);
+
 
     }
 
