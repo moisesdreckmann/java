@@ -1,13 +1,14 @@
 package orgMoises._PadraoDeProjeto.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import orgMoises._PadraoDeProjeto.model.Cliente;
 import orgMoises._PadraoDeProjeto.model.Endereco;
 import orgMoises._PadraoDeProjeto.repository.ClienteRepository;
 import orgMoises._PadraoDeProjeto.repository.EnderecoRepository;
 
 import java.util.Optional;
-
+@Service
 public class ClienteServiceImp implements ClienteService{
 
     @Autowired
