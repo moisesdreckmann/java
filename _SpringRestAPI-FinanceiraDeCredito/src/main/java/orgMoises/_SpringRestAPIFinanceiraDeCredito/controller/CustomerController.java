@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/customers")
+@RequestMapping("customers")
 public class CustomerController {
     @Autowired //injeção para um atributo. Serve para o spring reconhecer ele
     private CustomerService customerService;
@@ -39,5 +39,5 @@ public class CustomerController {
         customer1.setFirstName("novoNome");
         return ResponseEntity.ok(this.customerService.save(customer1));
     }
-
+    Customer customer = new Customer();
 }
