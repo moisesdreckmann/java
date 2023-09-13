@@ -1,10 +1,12 @@
 package controller;
 import java.util.Scanner;
 import model.ContaBancaria;
+import java.util.Locale;
 
 public class ContaBancariaController {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
         ContaBancaria contaBancaria = new ContaBancaria();
 
         System.out.println("digite o numero da conta: ");
