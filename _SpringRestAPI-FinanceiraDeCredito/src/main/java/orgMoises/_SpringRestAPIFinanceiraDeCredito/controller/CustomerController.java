@@ -39,5 +39,4 @@ public class CustomerController {
         customer1.setFirstName("novoNome");
         return ResponseEntity.ok(this.customerService.save(customer1));
     }
-    Customer customer = new Customer();
 }
