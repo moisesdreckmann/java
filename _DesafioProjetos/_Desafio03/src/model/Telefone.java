@@ -29,8 +29,11 @@ public class Telefone {
     }
 
     public void setDesligar(boolean desligar) {
-        this.desligar = desligar;
-    }
+        if(this.ligar = true) {
+            this.desligar = desligar;
+            this.ligar = false;
+        }
+     }
 
     public boolean isAtender() {
         return atender;
