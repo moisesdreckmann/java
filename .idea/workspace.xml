@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3661136-a43b-497b-879f-1dcab690c1fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/_04 Lista03 - HerancaSimples/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_04 Lista03 - HerancaSimples/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_07 Lista06 - Polimorfismo/_07 Lista06 - Polimorfismo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +31,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Anark PC/Desktop/ESTUDOS/4º SEMESTRE/Java/_02 Lista02",
+    "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "last_opened_file_path": "C:/Users/Anark PC/Desktop/ESTUDOS/4º SEMESTRE/Java/_07 Lista06 - Polimorfismo",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -45,6 +50,7 @@
       <workItem from="1692920101550" duration="51000" />
       <workItem from="1693526533946" duration="130000" />
       <workItem from="1693955633118" duration="53000" />
+      <workItem from="1695684123612" duration="174000" />
     </task>
     <servers />
   </component>
