@@ -61,6 +61,7 @@ public class VendasController {
         Item i4 = new Item(4, 0.0, 10, p2, p2.getPreco()*10);
         Pedido pedido3 = new Pedido(3L, data2, valor2, Tipo.pendente, v1, List.of(i4));
         pedido3.verificarEstoque(List.of(i4));
+        
 
     }
 
